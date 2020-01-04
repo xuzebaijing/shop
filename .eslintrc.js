@@ -9,7 +9,9 @@ module.exports = {
   ],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'space-before-function-paren': 0,
+    'no-unused-vars':'off' // 取消已经定义但是未使用的报错提示
   },
   parserOptions: {
     parser: 'babel-eslint'

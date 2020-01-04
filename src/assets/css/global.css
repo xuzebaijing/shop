@@ -1,0 +1,51 @@
+/* 全局样式表 */
+html,body,#app{
+	height:100%;
+	margin: 0;
+	padding: 0;
+}
+ div, nav, section, footer, p, h1, h2, h3, h4, h5, h6, span, img, a, ul, li, ol, dl, dd, dt, table, th, tr, td, form, input, select, option, textarea, button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+a {
+  color: #333;
+}
+
+.clear::after {
+  content: "";
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+
+.clear {
+  *zoom: 1;
+}
+
+body {
+  font-family: "Microsoft yahei";
+  font-size: 14px;
+  color: #666;
+}
+
+@media (max-width:1200px) {
+  body {
+    width: 1200px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
