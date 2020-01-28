@@ -38,7 +38,7 @@
 import { async } from 'q'
 
 export default {
-  data () {
+  data() {
     return {
       loginForm: {
         username: '',
@@ -59,13 +59,16 @@ export default {
   },
   methods: {
     // 重置表单
-    restLoginForm () {
+    restLoginForm() {
       this.$refs.loginFormRef.resetFields()
     },
-    login () {
+    login() {
       this.$refs.loginFormRef.validate(async valid => {
         if (valid) {
-          const { data: result } = await this.$http.post('login', this.loginForm)
+          const { data: result } = await this.$http.post(
+            'login',
+            this.loginForm
+          )
           if (result.meta.status !== 200) {
             this.$message.error('登录失败')
           } else {

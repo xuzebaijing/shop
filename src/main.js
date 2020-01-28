@@ -10,11 +10,9 @@ import './assets/css/global.css'
 import './assets/fonts/iconfont.css'
 // 引入 axios
 import axios from 'axios'
-console.log(axios.defaults)
 // 配置axios请求根路径
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
 Vue.prototype.$http = axios
-
 Vue.config.productionTip = false
 
 new Vue({
